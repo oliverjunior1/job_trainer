@@ -17,7 +17,7 @@ class Student:
 
     def average(self):
         return sum(self.grade)/len(self.grade)
-    
+
     def __str__(self):
         return f'The name of the student is {self.name}, the grade is: {self.average()}'
 
