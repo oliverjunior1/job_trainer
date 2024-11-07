@@ -29,7 +29,15 @@ while not game_over:
     if pressed[K_RIGHT]:
         x += 0.5 * dt
 
-    if x >(screen.get_width())
+    if x >(screen.get_width()-spriteWidth):
+       x = screen.get_width() - spriteWidth
+    if y>(screen.get_height() - spriteHeight):
+        y = screen.get_height() - spriteHeight
+    if x < 0:
+        x = 0
+    if y < 0:
+        y = 0
+
     screen.fill((0, 0, 0))
     screen.blit(sprite1, (x, y) )
     pygame.display.update()
