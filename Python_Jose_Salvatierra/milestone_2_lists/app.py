@@ -32,6 +32,8 @@ def prompt_add_book():
     name = input('Enter the new name book:')
     author = input('Enter the new book author:')
 
+    database.add_book(name, author)
+
 def list_books():
     books = database.get_all_books()
     for book in books:
