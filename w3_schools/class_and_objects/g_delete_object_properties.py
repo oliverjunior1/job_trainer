@@ -1,13 +1,13 @@
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name,lname, age):
         self.name = name
         self.age = age
+        self.lname = lname
 
     def all_name(self):
         print(f'The name is {self.name} and the age is {self.age}.')
 
-p = Person('Joao', 11)
+p = Person('Joao', 'Oliveira', 12)
 
-#delete p.age
-
+del p.lname
 p.all_name()
