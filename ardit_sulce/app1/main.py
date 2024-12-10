@@ -11,8 +11,10 @@ while True:
             todos.append(todo)
         case 'show':
             for item in todos:
+                item = item.title()
                 print(item)
         case 'exit':
             break
+
 
 print('Bye!')
