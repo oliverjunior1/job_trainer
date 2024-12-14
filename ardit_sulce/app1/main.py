@@ -17,6 +17,8 @@ while True:
             number = number - 1
             new_todo = input('Enter new todo: ')
             todos[number]= new_todo
+        case 'complete':
+            pass
         case 'exit':
             break
 
