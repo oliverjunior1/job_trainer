@@ -1,0 +1,1 @@
+file = open('file_path', 'r')
