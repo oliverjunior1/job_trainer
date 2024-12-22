@@ -1,6 +1,4 @@
-file = open("essay.txt", 'r')
-content = file.read()
-file.close()
+with open('essay.txt') as x:
+    y = x.read()
 
-nr_chars = len(content)
-print(nr_chars)
+print(len(y))
