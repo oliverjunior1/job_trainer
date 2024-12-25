@@ -1,3 +1,7 @@
+def get_todos():
+    with open('todos.txt', 'r') as file:
+        todos_local = file_local.readlines()
+    return todos_local
 while True:
     # Get user input and strip space chars from it
     user_action = input('Type add, complete,show or edit: ')
@@ -11,7 +15,9 @@ while True:
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
 
-        todos.append(todo + '\n')
+            todos = get_todos()
+
+            todos.append(todo + '\n')
 
         with open('todos.txt', 'w') as file:
             file.writelines(todos)
@@ -21,8 +27,7 @@ while True:
             # todos = file.readlines()
             # file.close()
 
-        with open('todos.txt', 'r') as file:
-            todos = file.readlines()
+        todos = get_todos()
             # for index, item in enumerate(todos):
             #     print(f'{index}-{item}')
             # print(f'Lenght is {index + 1}')
@@ -46,8 +51,7 @@ while True:
 
             number = number -1
 
-            with open('todos.txt', 'r') as file:
-                todos = file.readlines()
+            todos = get_todos()
 
             new_todo = input('Enter new todo: ')
             todos[number] = new_todo + '\n'
@@ -64,8 +68,7 @@ while True:
         try:
             number = int(user_action[9:])
 
-            with open('todos.txt', 'r') as file:
-                todos = file.readlines()
+            todos = get_todos()
             index = number -1
             todo_to_remove = todos[index].strip('\n')
             todos.pop(index)
