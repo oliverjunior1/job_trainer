@@ -20,9 +20,9 @@ while True:
     if user_action.startswith('add'):
         todo = user_action[4:]
 
-            todos = get_todos('todos.txt')
+        todos = get_todos('todos.txt')
 
-            todos.append(todo + '\n')
+        todos.append(todo + '\n')
 
         write_todos('todos.txt', todos)
 
@@ -60,7 +60,7 @@ while True:
             new_todo = input('Enter new todo: ')
             todos[number] = new_todo + '\n'
 
-           write_todos('todos.txt', todos)
+            write_todos('todos.txt', todos)
         except ValueError:
             print('Your command is not valid.')
             user_action = input('Type add, complete,show or edit: ')
