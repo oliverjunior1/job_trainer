@@ -1,7 +1,15 @@
-def get_todos():
-    with open('todos.txt', 'r') as file:
+from os import write
+
+
+def get_todos(filepath):
+    with open('todos.txt', 'r') as file_local:
         todos_local = file_local.readlines()
     return todos_local
+
+def write_todos(filepath, todos_arg):
+    with open(filepath, 'w') as file:
+        file.writelines(todos_arg)
+
 while True:
     # Get user input and strip space chars from it
     user_action = input('Type add, complete,show or edit: ')
@@ -12,15 +20,11 @@ while True:
     if user_action.startswith('add'):
         todo = user_action[4:]
 
-        with open('todos.txt', 'r') as file:
-            todos = file.readlines()
-
-            todos = get_todos()
+            todos = get_todos('todos.txt')
 
             todos.append(todo + '\n')
 
-        with open('todos.txt', 'w') as file:
-            file.writelines(todos)
+        write_todos('todos.txt', todos)
 
     elif user_action.startswith('show'):
             # file = open('todos.txt', 'r')
@@ -56,8 +60,7 @@ while True:
             new_todo = input('Enter new todo: ')
             todos[number] = new_todo + '\n'
 
-            with open('todos.txt', 'w') as file:
-                file.writelines(todos)
+           write_todos('todos.txt', todos)
         except ValueError:
             print('Your command is not valid.')
             user_action = input('Type add, complete,show or edit: ')
