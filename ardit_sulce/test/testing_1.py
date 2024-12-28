@@ -1,11 +1,19 @@
-def strength(password):
-    if len(password) < 8:
+def strenght(password):
+    isUpper = False
+    isDigit = False
+    isMoreThanEight = False
+
+    for x in password:
+        if x.isupper():
+            isUpper == True
+        if x.isdigit():
+            isDigit == True
+        if len(x) >= 8:
+            isMoreThanEight == True
+
+    if isUpper == True and isDigit == True and isMoreThanEight == True:
+        print('Strong Password')
+    else:
         print('Weak Password')
-    if not any(char.isupper() for char in password):
-        return 'Weak Password'
-    if not any(char.isdigit() for char in password):
-        return 'Weak Password'
-    return 'Strong Password'
 
-print(strength(input('Enter the password: ')))
-
+strenght(input('Input your password: '))
