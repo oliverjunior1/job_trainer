@@ -1,30 +1,18 @@
-password = input('Enter the new password: ')
+def strength(password):
+    # Check if the password is 8 or more characters
+    if len(password) < 8:
+        return "Weak Password"
 
-result = {}
+    # Check if the password has at least one uppercase letter
+    if not any(char.isupper() for char in password):
+        return "Weak Password"
 
-if len(password) >= 8:
-    result['length']=True
-else:
-    result['length']=True
+    # Check if the password has at least one digit
+    if not any(char.isdigit() for char in password):
+        return "Weak Password"
 
-digit = False
-for i in password:
-    if i.isdigit():
-        digit = True
+    # If all conditions are met, return "Strong Password"
+    return "Strong Password"
 
-result['digits']=digit
 
-uppercase = False
-for i in password:
-    if i.isupper():
-        uppercase = True
-
-result['upper-case'] = uppercase
-
-print(result)
-print(result.values())
-
-if all(result.values()):
-    print('Strong Password')
-else:
-    print('Weak Passwrod')
+print(strength(input('Enter the password: ')))
