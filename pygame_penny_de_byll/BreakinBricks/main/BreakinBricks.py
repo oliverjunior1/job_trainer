@@ -56,5 +56,5 @@ while not game_over:
         x += 0.5 * dt
     bat_rect[0] = x
     pygame.display.update()
-    
+
 pygame.quit()
