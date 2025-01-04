@@ -1,3 +1,11 @@
+'''Implement the Square constructor. This constructor should take an integer argument and initialize the side attribute with the value of this argument.
+
+Implement the calculate_area() method. If the side attribute is less than or equal to zero, return -1. Otherwise, calculate and return the area of the square using the formula: side * side.
+
+Implement the calculate_perimeter() method. If the side attribute is less than or equal to zero, return -1. Otherwise, calculate and return the perimeter of the square using the formula: 4 * side.
+'''
+
+
 class Square:
     def __init__(self, side):
         self.side = side
