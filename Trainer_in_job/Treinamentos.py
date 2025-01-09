@@ -16,10 +16,24 @@
 #
 # print(p)
 #----------------------------matplotlib----------------------------------------------------
-import numpy as np
-import matplotlib.pyplot as plt
+# import numpy as np
+# import matplotlib.pyplot as plt
+#
+# x = np.array([1,2,5,7,8])
+#
+# plt.plot(x)
+# plt.show()
+#
+#---------------------------args---------------------------------------------------------
+# def square(*args):
+#     for x in args:
+#         print(x**2)
+#
+# square(1,2,3,4,5,6,7,8)
+#
+#----------------------------kwargs------------------------------------------------------
+def family(**kwargs):
+    for x, y in kwargs.items():
+        print("%s = %s" % (x, y))
 
-x = np.array([1,2,5,7,8])
-
-plt.plot(x)
-plt.show()
+family(father = 'Joaquim', mather = 'Alyne', son = 'Joao', daughter = 'Mariane')
