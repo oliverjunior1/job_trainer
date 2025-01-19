@@ -2,7 +2,10 @@ import pygame
 
 pygame.init()
 
-screen = pygame.display.set_mode((400,400))
+display = pygame.display.set_mode((400,400))
+image = pygame.image.load('../beginning/plant.png')
+display.blit(image,(100,100))
+pygame.time.wait(5000)
 
 running = True
 while running:
