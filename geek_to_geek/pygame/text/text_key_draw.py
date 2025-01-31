@@ -14,7 +14,8 @@ pygame.draw.rect(screen, (255,255,255),(70,280,350,30))
 font = pygame.font.SysFont('freesanbold.ttf', 50)# specific fonts will be better
 font2 = pygame.font.SysFont('Lucida Console', 14)# If I put system fonts won't show, if it isn't installed
 text = font.render('Jesus is the way,', True, (255,255,255))
-text2 = font2.render('type left and right on the keyboard to see all the message!', True, (100,150,100))
+text2 = font2.render('type left and right on the keyboard to see all the message!',
+                     True, (100,150,100))
 text_rect2 = text2.get_rect()
 text_rect2.center=(250,200)
 text_rect = text.get_rect()
