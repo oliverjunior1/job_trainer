@@ -9,8 +9,10 @@ image1 = pygame.image.load('gfg-gg-logo.svg')
 image2 = pygame.image.load('OIP.jpeg')
 
 # Configurar a fonte e o texto
-font = pygame.font.SysFont('Arial', 30)
-text1 = font.render('Texto 1', True, (255, 255, 255))
+font = pygame.font.SysFont('Arial', 15)
+text1 = font.render('John 3:16 For God so loved the world that He gave His one and only Son, '
+                    'that everyone who believes in Him shall not perish but have eternal life.',
+                    True, (255, 255, 255))
 text2 = font.render('Texto 2', True, (255, 255, 255))
 
 # Configurar o relógio
