@@ -76,15 +76,19 @@
 #
 # print(x)
 #-----------------------------------kwars_and_args---------------------------------------------
-def fum(*args):
-    return sum(args)
+# def fum(*args):
+#     return sum(args)
+#
+# print(fum(15,25,10,18,100))
+#
+# def fum(**kwargs):
+#     for a, b in kwargs.items():
+#         return print(a, b)
+#
+# fum(c=1)
+# fum(d=5)
+# fum(e=7)
+#--------------------------------------tkinter------------------------------------------------
+import tkinter as tk
+import tkinter as ttk
 
-print(fum(15,25,10,18,100))
-
-def fum(**kwargs):
-    for a, b in kwargs.items():
-        return print(a, b)
-
-fum(c=1)
-fum(d=5)
-fum(e=7)
