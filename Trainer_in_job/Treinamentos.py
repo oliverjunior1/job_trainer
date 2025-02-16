@@ -91,12 +91,13 @@
 #
 # print(y)
 #------------------------------pandas-matplotlib-----------------------------------
-import matplotlib.pyplot as plt
-import pandas as pd
-
-x = pd.array([1,7,5,11])
-y = pd.Series(x)
-
-plt.plot(y)
-
-plt.show()
+# import matplotlib.pyplot as plt
+# import pandas as pd
+#
+# x = pd.array([1,7,5,11])
+# y = pd.Series(x)
+#
+# plt.plot(y)
+#
+# plt.show()
+#----------------------------------pygames_new------------------------------------
