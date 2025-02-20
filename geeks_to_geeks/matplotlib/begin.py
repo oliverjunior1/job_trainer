@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-x = [10,15,17,20,25,33]
-y = [1,3,2,7,5,8]
+x = [1,7,5,15,6,20]
+y = np.array(x)
 
-plt.plot(x,y)
+plt.plot(y)
 plt.show()
