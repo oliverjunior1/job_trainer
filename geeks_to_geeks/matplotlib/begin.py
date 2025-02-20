@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
-import numpy as np
 
-x = [1,7,5,15,6,20]
-y = np.array(x)
+x = [1,5,7]
+y = [3,4,5]
 
-plt.plot(y)
+plt.title('Line 1', color='red')
+plt.plot(x,y)
 plt.show()
