@@ -1,5 +1,7 @@
 # lambda
 
-x = lambda a, b, c: a * b -c
+# x = lambda a, b, c: a * b -c
+#
+# print(x(3,4,5))
+#
 
-print(x(3,4,5))
