@@ -102,22 +102,32 @@
 # plt.show()
 #----------------------------------pygames_new------------------------------------
 # list
-
-mylist = [1,2,3,4,5]
-print(type(mylist))
-print(mylist)
-
-# tupple
-mytupple = (1,2,3,4,5,6)
-print(type(mytupple))
-print(mytupple)
-
-# set
-myset = {1,2,3,4,5}
-print(type(myset))
-print(myset)
-
-# dict
-mydict = {'name':'Alyne', 'age':18, 'name': 'Joaquim', 'age':42 }
-print(type(mydict))
-print(mydict)
+#
+# mylist = [1,2,3,4,5]
+# print(type(mylist))
+# print(mylist)
+#
+# # tupple
+# mytupple = (1,2,3,4,5,6)
+# print(type(mytupple))
+# print(mytupple)
+#
+# # set
+# myset = {1,2,3,4,5}
+# print(type(myset))
+# print(myset)
+#
+# # dict
+# mydict = {'name':'Alyne', 'age':18, 'name': 'Joaquim', 'age':42 }
+# print(type(mydict))
+# print(mydict)
+#---------------------------------------------------------------------------
+# import random
+#
+# def lucky():
+#     x = random.sample(range(1,61),6)
+#     return sorted(x)
+#
+# y = lucky()
+#
+# print(y)
