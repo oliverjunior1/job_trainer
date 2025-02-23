@@ -22,33 +22,57 @@
 # y = lucky()
 # print(y)
 #---------------------------pygame---------------------------------------
-import pygame
-import sys
+# import pygame
+# import sys
+#
+# from narwhals import scan_csv
+#
+# pygame.init()
+# drawer = (40,40,30,30)
+# screen = pygame.display.set_mode((500,500))
+#
+# # draw
+# draw = pygame.draw.rect(screen, 'red', drawer)
+#
+# # text
+# font = pygame.font.SysFont('Times New Roman', 25)
+# text = font.render('Jesus is the light of the World!', True, 'blue')
+# text_rect = text.get_rect()
+# text_rect.center=(250,250)
+# # ending
+# while True:
+#     screen.blit(text, text_rect)
+#     for event in pygame.event.get():
+#         if event.type==pygame.QUIT:
+#             sys.exit()
+#             pygame.quit()
+#         if event.type==pygame.KEYDOWN:
+#             if event.key==pygame.K_UP:
+#                 draw = pygame.draw.rect(screen, 'green', drawer)
+#             elif event.key==pygame.K_DOWN:
+#                 draw = pygame.draw.rect(screen, 'pink', drawer)
+#     pygame.display.flip()
+#----------------------------tkinter---------------------------------
+import tkinter as tk
+import random
 
-from narwhals import scan_csv
+root = tk.Tk()
 
-pygame.init()
-drawer = (40,40,30,30)
-screen = pygame.display.set_mode((500,500))
+def Mega():
+    x = random.sample(range(1,61), 6)
+    label.config(text=f'The lucky numbers for the megasena were:{sorted(x)}!')
+    return label.pack()
 
-# draw
-draw = pygame.draw.rect(screen, 'red', drawer)
+def Facil():
+    x = random.sample(range(1,61), 6)
+    label.config(text=f'The lucky numbers for the Lotofacil were:{sorted(x)}!')
+    return label.pack()
 
-# text
-font = pygame.font.SysFont('Times New Roman', 25)
-text = font.render('Jesus is the light of the World!', True, 'blue')
-text_rect = text.get_rect()
-text_rect.center=(250,250)
-# ending
-while True:
-    screen.blit(text, text_rect)
-    for event in pygame.event.get():
-        if event.type==pygame.QUIT:
-            sys.exit()
-            pygame.quit()
-        if event.type==pygame.KEYDOWN:
-            if event.key==pygame.K_UP:
-                draw = pygame.draw.rect(screen, 'green', drawer)
-            elif event.key==pygame.K_DOWN:
-                draw = pygame.draw.rect(screen, 'pink', drawer)
-    pygame.display.flip()
+root.geometry(('500x500'))
+label = tk.Label(root,text="Matthew 21:22 And whatever you ask in prayer, you will receive if you believe.")
+label.pack()
+button1 = tk.Button(root,text='MegaSena', command=Mega)
+button1.pack()
+button2 = tk.Button(root, text='Lotofacil', command=Facil)
+button2.pack()
+tk.mainloop()
