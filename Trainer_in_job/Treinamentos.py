@@ -86,9 +86,10 @@
 # plt.plot(x,y)
 # plt.show()
 #-----------------------------pandas---------------------------------
-import pandas as pd
+# import pandas as pd
+#
+# y =pd.array([5,7,9])
+# x = pd.Series(y)
+#
+# print(x)
 
-y =pd.array([5,7,9])
-x = pd.Series(y)
-
-print(x)
