@@ -121,7 +121,7 @@
 # mydict = {'name':'Alyne', 'age':18, 'name': 'Joaquim', 'age':42 }
 # print(type(mydict))
 # print(mydict)
-#---------------------------------------------------------------------------
+#---------------------------------mega_sena------------------------------------------
 # import random
 #
 # def lucky():
@@ -131,3 +131,29 @@
 # y = lucky()
 #
 # print(y)
+
+#----------------------------------tkinter------------------------------------------
+import tkinter as tk
+import random
+
+root = tk.Tk()
+def mega():
+    x = random.sample(range(1,61), 6)
+    label.config(text=f'{sorted(x)}')
+    return label.pack()
+def lotofacil():
+    y = random.sample(range(1,26),15)
+    label.config(text=f'{sorted(y)}')
+    return label.pack()
+
+
+root.geometry(('500x600'))
+label = tk.Label(text='Jesus is the light of the world!')
+button = tk.Button(text='click here to show lotofacil:', command=lotofacil)
+button2 = tk.Button(text='click here to show megasena:', command=mega)
+button2.pack()
+label.pack()
+button.pack()
+
+
+root.mainloop()
