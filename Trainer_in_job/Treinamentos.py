@@ -53,26 +53,42 @@
 #                 draw = pygame.draw.rect(screen, 'pink', drawer)
 #     pygame.display.flip()
 #----------------------------tkinter---------------------------------
-import tkinter as tk
-import random
+#
+# import tkinter as tk
+# import random
+#
+# root = tk.Tk()
+#
+# def Mega():
+#     x = random.sample(range(1,61), 6)
+#     label.config(text=f'The lucky numbers for the megasena were:{sorted(x)}!')
+#     return label.pack()
+#
+# def Facil():
+#     x = random.sample(range(1,61), 6)
+#     label.config(text=f'The lucky numbers for the Lotofacil were:{sorted(x)}!')
+#     return label.pack()
+#
+# root.geometry(('500x150'))
+# label = tk.Label(root,text="Matthew 21:22 And whatever you ask in prayer, you will receive if you believe.")
+# label.pack()
+# button1 = tk.Button(root,text='MegaSena', command=Mega)
+# button1.pack()
+# button2 = tk.Button(root, text='Lotofacil', command=Facil)
+# button2.pack()
+# tk.mainloop()
+#----------------------------matplotlib------------------------------
+# import matplotlib.pyplot as plt
+#
+# x = [1,2,3,4,5,6]
+# y = [25,27,30,35,37,41]
+#
+# plt.plot(x,y)
+# plt.show()
+#-----------------------------pandas---------------------------------
+import pandas as pd
 
-root = tk.Tk()
+y =pd.array([5,7,9])
+x = pd.Series(y)
 
-def Mega():
-    x = random.sample(range(1,61), 6)
-    label.config(text=f'The lucky numbers for the megasena were:{sorted(x)}!')
-    return label.pack()
-
-def Facil():
-    x = random.sample(range(1,61), 6)
-    label.config(text=f'The lucky numbers for the Lotofacil were:{sorted(x)}!')
-    return label.pack()
-
-root.geometry(('500x500'))
-label = tk.Label(root,text="Matthew 21:22 And whatever you ask in prayer, you will receive if you believe.")
-label.pack()
-button1 = tk.Button(root,text='MegaSena', command=Mega)
-button1.pack()
-button2 = tk.Button(root, text='Lotofacil', command=Facil)
-button2.pack()
-tk.mainloop()
+print(x)
