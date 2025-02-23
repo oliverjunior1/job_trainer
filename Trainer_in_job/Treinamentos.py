@@ -8,6 +8,14 @@
 # list_2 = [x**3 for x in list]
 #
 # print(list_2)
+#--------------------------list_ascending_and_adding-----------------------
+# list1 = [1,2,3,4]
+# list2 = [5,6,7,8]
+#
+# list1.extend(list2)
+# list1.sort(reverse=True)
+#
+# print(list1)
 #-----------------------------try_except----------------------------------
 # try:
 #     x = 20/0
