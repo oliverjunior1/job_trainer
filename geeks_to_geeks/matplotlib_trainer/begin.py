@@ -1,4 +1,4 @@
-# import matplotlib.pyplot as plt
+# import matplotlib_trainer.pyplot as plt
 #
 # x = [1,5,7]
 # y = [3,4,5]
@@ -8,7 +8,7 @@
 # plt.show()
 #------------------------------------------------
 #
-# import matplotlib.pyplot as plt
+# import matplotlib_trainer.pyplot as plt
 #
 # x = [1,3,4,2,7,6,10]
 # y = [15,20,25,30,35,40,45]

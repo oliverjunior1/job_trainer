@@ -29,16 +29,16 @@
 #             if event.key==pygame.K_2:
 #                 screen.fill((0,0,255))
 #     pygame.display.flip()
-#----------------------------------------matplotlib------------------------------------------
-# import matplotlib.pyplot as plt
+#----------------------------------------matplotlib_trainer------------------------------------------
+# import matplotlib_trainer.pyplot as plt
 #
 # x = [5,10,15,20,25,30]
 # y = [25,10,27,15,35,37]
 #
 # plt.plot(x, y, 'o')
 # plt.show()
-#---------------------------------------pandas----------------------------------------------
-# import pandas as pd
+#---------------------------------------pandas_trainer----------------------------------------------
+# import pandas_trainer as pd
 #
 # x = pd.array([1,2,3,4,5,6])
 # y =pd.Series(x)

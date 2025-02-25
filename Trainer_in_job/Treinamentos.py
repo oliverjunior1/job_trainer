@@ -85,16 +85,16 @@
 # button2 = tk.Button(root, text='Lotofacil', command=Facil)
 # button2.pack()
 # tk.mainloop()
-#----------------------------matplotlib------------------------------
-# import matplotlib.pyplot as plt
+#----------------------------matplotlib_trainer------------------------------
+# import matplotlib_trainer.pyplot as plt
 #
 # x = [1,2,3,4,5,6]
 # y = [25,27,30,35,37,41]
 #
 # plt.plot(x,y)
 # plt.show()
-#-----------------------------pandas---------------------------------
-# import pandas as pd
+#-----------------------------pandas_trainer---------------------------------
+# import pandas_trainer as pd
 #
 # y =pd.array([5,7,9])
 # x = pd.Series(y)
