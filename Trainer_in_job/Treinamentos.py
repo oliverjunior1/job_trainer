@@ -60,9 +60,9 @@
 #             elif event.key==pygame.K_DOWN:
 #                 draw = pygame.draw.rect(screen, 'pink', drawer)
 #     pygame.display.flip()
-#----------------------------tkinter---------------------------------
+#----------------------------tkinter_trainer---------------------------------
 #
-# import tkinter as tk
+# import tkinter_trainer as tk
 # import random
 #
 # root = tk.Tk()

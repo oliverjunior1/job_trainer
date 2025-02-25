@@ -8,7 +8,7 @@ def callback():
     print(result)
 textEditor = Text(root, width=30, height=10, font=(('Times'), 15), wrap=WORD)
 textEditor.grid(row=0, column=0, pady=20, padx=40)
-textEditor.insert(INSERT, 'Hello I am a tkinter widget')
+textEditor.insert(INSERT, 'Hello I am a tkinter_trainer widget')
 textEditor.config(state='disabled')
 textEditor.config(state='normal')
 button = Button(root, text='Save',width=10, height=1, command=callback)
