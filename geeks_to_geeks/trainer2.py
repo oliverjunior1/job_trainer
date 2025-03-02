@@ -1,7 +1,8 @@
-x = [1,2,3,4,5,6]
-y = [7,8,9,10]
+import random
 
-x.extend(y)
-x.sort(reverse=True)
+def lucky():
+    x = random.sample(range(1,25),15)
+    return sorted(x)
 
-print(x)
+y = lucky()
+print(y)
