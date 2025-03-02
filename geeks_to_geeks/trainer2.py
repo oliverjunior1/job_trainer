@@ -19,27 +19,27 @@
 # button2 = tk.Button(root, text='Click here to megasena', command=lotofacil)
 # button2.pack()
 # tk.mainloop()
-
-import pygame
-import sys
-
-pygame.init()
-
-screen = pygame.display.set_mode((500,500))
-
-# draw
-draw = pygame.draw.rect(screen, 'red', (250,200,50,30))
-
-# text
-font = pygame.font.SysFont('Times New Roman', 25)
-text = font.render('Jesus is the light of the world!', True, 'white')
-text_rect = text.get_rect()
-text_rect.center=(250,100)
-
-while sys:
-    screen.blit(text, text_rect)
-    for event in pygame.event.get():
-        if event.type==pygame.QUIT:
-            pygame.quit()
-            sys.exit()
-    pygame.display.flip()
+#
+# import pygame
+# import sys
+#
+# pygame.init()
+#
+# screen = pygame.display.set_mode((500,500))
+#
+# # draw
+# draw = pygame.draw.rect(screen, 'red', (250,200,50,30))
+#
+# # text
+# font = pygame.font.SysFont('Times New Roman', 25)
+# text = font.render('Jesus is the light of the world!', True, 'white')
+# text_rect = text.get_rect()
+# text_rect.center=(250,100)
+#
+# while sys:
+#     screen.blit(text, text_rect)
+#     for event in pygame.event.get():
+#         if event.type==pygame.QUIT:
+#             pygame.quit()
+#             sys.exit()
+#     pygame.display.flip()
