@@ -9,8 +9,9 @@
 # print(x(4,4))
 import matplotlib.pyplot as plt
 
-x = [35,25,25,15]
+x = [40,25,20,15]
 y = ['Python', 'Javascript', 'Java', 'C#']
 
 plt.pie(x, labels=y, autopct=f'%0.0f%%')
+
 plt.show()
