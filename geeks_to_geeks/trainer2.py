@@ -16,9 +16,11 @@
 # plt.title('The most used languages in the World!')
 # plt.show()
 
-import pandas as pd
+# import pandas as pd
+#
+# x = {'Name':['Alyne', 'Joaquim', 'Mariane', 'Joao Pedro'], 'Age':[38,42,4,12]}
+#
+# y =pd.DataFrame(x)
+# print(y)
 
-x = {'Name':['Alyne', 'Joaquim', 'Mariane', 'Joao Pedro'], 'Age':[38,42,4,12]}
 
-y =pd.DataFrame(x)
-print(y)
