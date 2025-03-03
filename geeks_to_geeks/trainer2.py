@@ -7,11 +7,18 @@
 # x = lambda a, b: a **b
 #
 # print(x(4,4))
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
+#
+# x = [30,15,10,5,40]
+# y = ['Python', 'Javascript', 'Java', 'C#', 'Outras']
+#
+# plt.pie(x, labels=y, autopct=f'%0.0f%%')
+# plt.title('The most used languages in the World!')
+# plt.show()
 
-x = [40,25,20,15]
-y = ['Python', 'Javascript', 'Java', 'C#']
+import pandas as pd
 
-plt.pie(x, labels=y, autopct=f'%0.0f%%')
+x = {'Name':['Alyne', 'Joaquim', 'Mariane', 'Joao Pedro'], 'Age':[38,42,4,12]}
 
-plt.show()
+y =pd.DataFrame(x)
+print(y)
