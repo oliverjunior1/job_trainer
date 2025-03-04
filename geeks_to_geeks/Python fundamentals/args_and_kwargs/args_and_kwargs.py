@@ -1,5 +1,5 @@
-def fun(*args, **kwargs):
-    print('Positional arguments:', args)
-    print('Keyword arguments:', kwargs)
+def poskey(*args, **kwargs):
+    print(f'Positional arguments: {args}')
+    print(f'Keyward arguments: {kwargs}')
 
-fun(1,2,3, a = 4, b = 5)
+print(poskey(1,2,3,4,5,6,a=1,b=2,c=3))
