@@ -19,3 +19,12 @@
 #     print(x)
 # except:
 #     print("You can't divide a number to zero!")
+#-------------------------extend-and-reverse-----------------------------------
+x = [1,2,3,4]
+y = [5,6,7,8]
+
+x.extend(y)
+x.sort(reverse=True)
+
+print(x)
+
