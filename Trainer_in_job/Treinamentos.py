@@ -9,4 +9,13 @@
 #
 # y = lucky()
 # print(y)
-#--------------------if
+#-------------------simple-if-else----------------------------
+# x = 20
+#
+# print("You can't drive.") if x < 18 else print("You can drive.")
+#----------------------try-except------------------------------
+# try:
+#     x=10/0
+#     print(x)
+# except:
+#     print("You can't divide a number to zero!")
